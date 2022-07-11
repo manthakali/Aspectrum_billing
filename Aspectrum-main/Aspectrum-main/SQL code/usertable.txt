@@ -1,0 +1,12 @@
+User Table
+
+CREATE TABLE `aspectrum`.`user` (
+  `id` INT NOT NULL,
+  `username` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(45) NOT NULL,
+  `firstname` VARCHAR(45) NULL,
+  `lastname` VARCHAR(45) NULL,
+  `email` VARCHAR(45) NULL,
+  `address` VARCHAR(45) NULL,
+  `phone` BIGINT(10) NULL,
+  PRIMARY KEY (`id`));

@@ -1,0 +1,13 @@
+Billing Table
+
+CREATE TABLE `aspectrum`.`billing` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `account` INT NULL,
+  `amount` DECIMAL(3) NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `account_UNIQUE` (`account` ASC) VISIBLE,
+  CONSTRAINT `account`
+    FOREIGN KEY (`account`)
+    REFERENCES `aspectrum`.`user` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
